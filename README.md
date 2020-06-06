@@ -33,4 +33,4 @@ Step 14 -> Once Installed, It will show the live cases of Coronavirus in differe
 Step 15 -> The Application requires internet of the mobile to be switched on to update the case with time.
 
 								OR
-Apart from building the apk from scratch, you can directly install the apk in the mobile phone which I have built in my PC.
+Apart from building the apk from scratch, you can directly install the apk in the mobile phone which we built in our PC.
