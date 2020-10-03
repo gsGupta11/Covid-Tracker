@@ -9,7 +9,10 @@ import 'Pages/form.dart';
 void main(){
   runApp(
     MaterialApp(
-      theme: ThemeData.dark(),
+      theme: ThemeData.dark().copyWith(
+        primaryColor: Color(0XFF0A0E20),
+        scaffoldBackgroundColor: Color(0XFF0A0E21),
+      ),
       routes: {
         "/":(context)=>Home(),
         "/india":(context)=>India(),
