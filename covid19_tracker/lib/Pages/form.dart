@@ -21,7 +21,7 @@ class _SuggestState extends State<Suggest> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black12,
+        backgroundColor: Color(0XFF0A0E20),
         title: Text(
           "COVID-19 TRACKER",
           style: TextStyle(
@@ -75,10 +75,11 @@ class _SuggestState extends State<Suggest> {
               Text("Preventions",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 25.0,
+                    fontSize: 35.0,
                     fontWeight: FontWeight.bold,
                   )),
               Expanded(
+                flex: 2,
                 child: ListView(
                   children: <Widget>[
                     ListTile(
@@ -162,8 +163,10 @@ class _SuggestState extends State<Suggest> {
         child: Form(
           key: formkey,
           child: Container(
-            padding: EdgeInsets.all(50.0),
+            padding: EdgeInsets.all(28.0),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.all(0.0),
@@ -183,7 +186,7 @@ class _SuggestState extends State<Suggest> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 20.0),
+                  margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 15.0),
                   child: TextFormField(
                     controller: name,
                     validator: (value) =>
@@ -201,7 +204,7 @@ class _SuggestState extends State<Suggest> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 20.0),
+                  margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 15.0),
                   child: TextFormField(
                     controller: mail,
                     validator: (value) => value.isEmpty
@@ -221,7 +224,7 @@ class _SuggestState extends State<Suggest> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 20.0),
+                  margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 15.0),
                   child: TextFormField(
                     autocorrect: true,
                     autofocus: true,
@@ -240,8 +243,8 @@ class _SuggestState extends State<Suggest> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 20.0),
-                  height: 300.0,
+                  margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 15.0),
+                  height: 200.0,
                   child: TextFormField(
                     controller: suggest,
                     validator: (value) => value.isEmpty
