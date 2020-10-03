@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import './blinking.dart';
 import 'package:responsive_container/responsive_container.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -159,7 +160,7 @@ class _HomeState extends State<Home> {
                         onPressed: () => {},
                         label: Text("Swipe Left(Country Wise Analysis)"),
                         icon: Icon(
-                          Icons.arrow_back,
+                          FontAwesomeIcons.arrowCircleLeft,
                         ),
                       ),
                     ],
@@ -193,7 +194,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black12,
+        backgroundColor: Color(0XFF0A0E20),
                 title: Text(
           "COVID-19 TRACKER",
           textAlign: TextAlign.center,
@@ -232,7 +233,7 @@ class _HomeState extends State<Home> {
                     ),
                     Text("Alert!",
                         style: TextStyle(
-                          color: Colors.red,
+                          color: Colors.yellow,
                           fontSize: 25.0,
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.bold,
